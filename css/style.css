@@ -4,47 +4,62 @@ body {
   color: #283136;
   font-weight: medium;
   font-family: 'Roboto medium';
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  min-width: 900px;
 }
-.topblock {
+
+.main-header {
   width: 1200px;
-  height: 436px;
+  margin: 0 auto;
   background: #eeeeee;
+}
+
+.container {
+  width: 880px;
   margin: 0 auto;
 }
-.block-center {
-  width: 900px;
-  margin: 0 auto;
-}
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-.main-header {
-  width: 880px;
-  margin: 0 auto;
-}
+
 .main-logo {
   float:left;
+  width: 139px;
 }
+
 .container-navigation{
   float: left;
-  width: 560px;
+  width: 450px;
 }
+
 .basket {
   float: right;
-  width: 100px;
+  width: 170px;
 }
-.container {
-  width: 880px;
-  height: auto;
+.navigation-point {
+  float:right;
+  width: 80px;
+}
+
+.main-block {
+  width: 1200px;
   margin: 0 auto;
 }
+
+.main-block1 {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 320px;
+  background: #eeeeee;
+}
+
 .promo {
   width: 380px;
-  height: 210px;
+  min-height: 210px;
   float:left;
 }
 .img-slider1, .img-slider2, .img-slider3 {
@@ -53,11 +68,10 @@ body {
 .slider2, .slider3 {
   visibility: hidden;
 }
-.middleblock {
+.main-block2 {
   width: 1200px;
-  height: auto;
   margin: 0 auto;
-  background: #ffffff;
+  min-height: ;
 }
 .service {
   width: 880px;
@@ -87,6 +101,7 @@ body {
   float: right;
 }
 .logos {
+  font-size: 0px;
 }
 .logo-client {
   margin-right: 117px;
@@ -96,38 +111,42 @@ body {
 .logo-client:last-child {
   margin-right: 0;
 }
+.main-block3 {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 416px;
+}
+
 .map {
   width: 1200px;
-  height: 416px;
+  min-height: 416px;
   margin: 0 auto;
 }
+
 .contant-us{
   width: 250px;
   height: 240px;
   margin: 88px 0 88px 160px;
 }
 
-.footerblock {
+.main-footer {
   width: 1200px;
-  height: 215px;
-  margin: 0 auto;
-  background: #ffffff;
-}
-.main-footer{
-  width: 880px;
-  height: auto;
+  min-height: 215px;
   margin: 0 auto;
 }
+
 .social-network {
   width: 240px;
-  height: 65px;
-  display: inline-block;
-  vertical-align: middle;
+  min-height: 65px;
+  float: left;
 
 }
 .social-network-text {
   width: 550px;
   height: 65px;
-  display: inline-block;
-  vertical-align: middle;
+  float: left;
+}
+.social-network-vk, .social-network-fb, .social-network-inst {
+  float: left;
+  width: 62px;
 }
