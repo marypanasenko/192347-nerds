@@ -8,34 +8,26 @@ body {
   padding: 0;
   min-width: 900px;
 }
-
 .main-header {
-  width: 1200px;
-  margin: 0 auto;
   background: #eeeeee;
 }
-
 .container {
   width: 880px;
   margin: 0 auto;
 }
-
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-
 .main-logo {
   float:left;
   width: 139px;
 }
-
 .container-navigation{
   float: left;
   width: 450px;
 }
-
 .basket {
   float: right;
   width: 170px;
@@ -44,19 +36,12 @@ body {
   float:right;
   width: 80px;
 }
-
 .main-block {
-  width: 1200px;
-  margin: 0 auto;
 }
-
 .main-block1 {
-  width: 1200px;
-  margin: 0 auto;
-  min-height: 320px;
+  min-height: 225px;
   background: #eeeeee;
 }
-
 .promo {
   width: 380px;
   min-height: 210px;
@@ -66,12 +51,7 @@ body {
   float: right;
 }
 .slider2, .slider3 {
-  visibility: hidden;
-}
-.main-block2 {
-  width: 1200px;
-  margin: 0 auto;
-  min-height: ;
+  display: none;
 }
 .service {
   width: 880px;
@@ -111,36 +91,34 @@ body {
 .logo-client:last-child {
   margin-right: 0;
 }
-.main-block3 {
-  width: 1200px;
-  margin: 0 auto;
-  min-height: 416px;
-}
 
 .map {
-  width: 1200px;
   min-height: 416px;
-  margin: 0 auto;
+  position: relative;
+}
+.map img{
+  width: 100%;
+  height: auto;
 }
 
 .contant-us{
   width: 250px;
   height: 240px;
   margin: 88px 0 88px 160px;
+  position: absolute;
+  top: 0px;
 }
 
 .main-footer {
-  width: 1200px;
   min-height: 215px;
-  margin: 0 auto;
 }
 
 .social-network {
   width: 240px;
   min-height: 65px;
   float: left;
-
 }
+
 .social-network-text {
   width: 550px;
   height: 65px;
@@ -149,4 +127,44 @@ body {
 .social-network-vk, .social-network-fb, .social-network-inst {
   float: left;
   width: 62px;
+}
+
+.choise {
+  float: left;
+  width: 230px;
+}
+
+.sites {
+  float: right;
+  width: 560px;
+}
+
+.sort{
+  font-size: 0;
+}
+.sort-menu li{
+  display: inline-block;
+}
+.sort-text, .sort-menu, .triangle-up, .triangle-down{
+  display: inline-block;
+  font-size: 16px;
+}
+.img {
+  font-size: 0;
+}
+.sites-img {
+  display: inline-block;
+  width: 240px;
+  font-size: 16px;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+.sites-img:nth-child(2n) {
+  margin-right: 0;
+}
+.modal {
+  display: none;
+}
+.pages {
+  margin-bottom: 78px;
 }
