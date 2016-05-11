@@ -144,6 +144,10 @@ body {
 }
 .sort-menu li{
   display: inline-block;
+  font-size: 0;
+}
+.sort-menu li a{
+  font-size: 16px;
 }
 .sort-text, .sort-menu, .triangle-up, .triangle-down{
   display: inline-block;
