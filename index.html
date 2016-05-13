@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Нёрдс</title>
 </head>
 <body>
   <header class="main-header">
-    <div class="container clearfix">
+    <div class="container">
       <div class="main-logo">
         <a href="index.html">
           <img src="img/main-logo.png" width="139" height="56" alt="Студия веб дизайна Нердс">
@@ -16,7 +17,7 @@
       </div>
       <div class="container-navigation">
         <nav class="main-navigation">
-          <ul class="clearfix">
+          <ul>
             <li class="navigation-point">
               <a href="#">Студия</a>
             </li>
@@ -32,149 +33,143 @@
           </ul>
         </nav>
       </div>
-      <div class="basket clearfix">
+      <div class="basket">
         <a href="#">
-          <p class="navigation-point"><span>Корзина</span><p>
-            <img class="navigation-point" src="img/basket-icon.png" width="15" height="15" alt="Корзина">
-          </a>
-        </div>
+          <img class="basket-icon" src="img/basket-icon.png" width="" height="" alt="">
+          <p>Корзина</p>
+        </a>
       </div>
-    </header>
-    <main class="main-block">
-      <div class="main-block1">
-        <div class="container">
-          <section class="slider1 clearfix">
-            <div class="promo">
-              <p><span class="slider-heading">Долго, дорого, скурпулезно</span></p>
-              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <div class="btn-more">
-                <a href="#">Узнать больше</a>
-              </div>
-            </div>
-            <div class="img-slider1">
-              <img src="img/gadgets.png" width="338" height="231" alt="Гаджеты">
-            </div>
-          </section>
-          <section class="slider2 clearfix">
-            <div class="promo">
-              <p><span class="slider-heading">Любите ли вы математику, как любим ее мы?</span></p>
-              <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-              <div class="btn-more">
-                <a href="#">Узнать больше</a>
-              </div>
-            </div>
-            <div class="img-slider2">
-              <img src="img/calculator.png" width="230" height="249" alt="Калькулятор">
-            </div>
-          </section>
-          <section class="slider3 clearfix">
-            <div class="promo">
-              <p><span class="slider-heading">Только наркотики, только хардкор!</span></p>
-              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-              <div class="btn-more">
-                <a href="#">Узнать больше</a>
-              </div>
-            </div>
-            <div class="img-slider3">
-              <img src="img/mr-robot.png" width="333" height="319" alt="Мистер-Робот">
-            </div>
-          </section>
-        </div>
-      </div>
+    </div>
+  </header>
+  <main class="main-block">
+    <div class="main-block1">
       <div class="container">
-        <section class="service clearfix">
-          <div class="service-content">
-            <div class="service-img">
-              <img src="img/websites.png" width="240" height="124" alt="websites">
-            </div>
-            <p class="service-heading">веб-сайты</p>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <div class="buy">
-              <a class="btn-buy" href="#">Заказать</a>
-            </div>
+        <section class="slider1 clearfix">
+          <div class="promo">
+            <p><span class="slider-heading">Долго, дорого, скурпулезно.</span></p>
+            <p class="slider-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="btn-more" href="#">Узнать больше</a>
           </div>
-          <div class="service-content">
-            <div class="service-img">
-              <img src="img/apps.png" width="240" height="124" alt="application">
-            </div>
-            <p class="service-heading">приложения</p>
-            <p>Покорите топ-10 приложений в AppStrore и Google Play</p>
-            <div class="buy">
-              <a class="btn-buy" href="#">Заказать</a>
-            </div>
-          </div>
-          <div class="service-content">
-            <div class="service-img">
-              <img src="img/presentation.png" width="240" height="124" alt="presentation">
-            </div>
-            <p class="service-heading">призентации</p>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <div class="buy">
-              <a class="btn-buy" href="#">Заказать</a>
-            </div>
+          <div class="img-slider1">
+            <img src="img/gadgets.png" width="338" height="231" alt="Гаджеты">
           </div>
         </section>
-        <section class="about-us clearfix">
+        <section class="slider2 clearfix">
+          <div class="promo">
+            <p><span class="slider-heading">Любите ли вы математику, как любим ее мы?</span></p>
+            <p class="slider-text">Нашим дизайнерам мы удаляем нейроны, ответственные <br> за креатив, чтобы дать им возможность все просчитать</p>
+            <a class="btn-more" href="#">Узнать больше</a>
+          </div>
+          <div class="img-slider2">
+            <img src="img/calculator.png" width="230" height="249" alt="Калькулятор">
+          </div>
+        </section>
+        <section class="slider3 clearfix">
+          <div class="promo">
+            <p><span class="slider-heading">Только наркотики,<br> только хардкор!</span></p>
+            <p class="slider-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+            <a class="btn-more" href="#">Узнать больше</a>
+          </div>
+          <div class="img-slider3">
+            <img src="img/mr-robot.png" width="333" height="319" alt="Мистер-Робот">
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="container">
+      <section class="service clearfix">
+        <div class="service-content">
+          <div class="service-img">
+            <img src="img/websites.png" width="240" height="124" alt="websites">
+          </div>
+          <p class="service-heading">веб-сайты</p>
+          <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="btn-buy pink" href="">Заказать</a>
+        </div>
+        <div class="service-content">
+          <div class="service-img">
+            <img src="img/apps.png" width="240" height="124" alt="application">
+          </div>
+          <p class="service-heading">приложения</p>
+          <p class="service-text">Покорите топ-10 приложений в AppStrore и Google Play</p>
+          <a class="btn-buy green" href="">Заказать</a>
+        </div>
+        <div class="service-content">
+          <div class="service-img">
+            <img src="img/presentation.png" width="240" height="124" alt="presentation">
+          </div>
+          <p class="service-heading">призентации</p>
+          <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn-buy yellow" href="">Заказать</a>
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="about-us-top clearfix">
           <div class="about-us-left">
-            <p><span class="about-us-heading">Мы — маленькая, но гордая дизайн-студия из Краснодара.</span></p>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-            <p><span class="text-style"> Выполняем заказы на разработку:</span></p>
-            <ul>
+            <p class="about-us-heading">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+            <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+          </div>
+          <div class="about-us-right full-logo">
+            <img src="img/full-logo.png" width="187" height="75" alt="Студия веб дизайна Нердс">
+            <div class="about-us-date">
+              <span>since 2004</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-us-bottom clearfix">
+          <div class="about-us-left">
+            <p class="about-us-text uppercase"><span> Выполняем заказы на разработку:</span></p>
+            <ul class="about-us-list">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для iOS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
           <div class="about-us-right">
-            <div class="full-logo">
-              <img src="img/full-logo.png" width="187" height="75" alt="Студия веб дизайна Нердс">
-            </div>
-            <p class="text-style">since 2004</p>
-            <p class="text-style">Как мы работаем:</p>
-            <ul>
+            <p class="about-us-text uppercase">Как мы работаем:</p>
+            <ul class="about-us-list">
               <li>С самоотдачей 145%</li>
               <li>Соблюдая сроки на 100%</li>
               <li>По предоплате 50%</li>
             </ul>
           </div>
-        </section>
-        <section class="logos">
-          <div class="logo-client">
-            <img src="img/glukhanko.png" width="198" height="37" alt="glukhanko">
-          </div>
-          <div class="logo-client">
-            <img src="img/htmlacademy.png" width="199" height="68" alt="htmlacademy">
-          </div>
-          <div class="logo-client">
-            <img src="img/borodinski.png" width="209" height="90" alt="borodinski">
-          </div>
-        </section>
-      </div>
-      <section class="map">
-        <img src="img/map.jpg" width="1200" height="416" alt="map">
-        <div class="contant-us">
-          <h2>NЁRDS DESIGN STUDIO</h2>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
-          <div class="btn-contact-us">
-            <a href="#">Напишите нам</a>
-          </div>
         </div>
       </section>
-    </main>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="footercontainer clearfix">
-          <div class="social-network clearfix">
-            <a class="social-network-vk" href="#">Вконтакте</a>
-            <a class="social-network-fb" href="#">Фейсбук</a>
-            <a class="social-network-inst" href="#">Инстаграм</a>
-          </div>
-          <div class="social-network-text">
-            <p><span>Давайте дружить, это выгодно!</span></p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-          </div>
+      <section class="logos">
+        <div class="logo-client">
+          <img src="img/glukhanko.png" width="198" height="37" alt="glukhanko">
+        </div>
+        <div class="logo-client">
+          <img src="img/htmlacademy.png" width="199" height="68" alt="htmlacademy">
+        </div>
+        <div class="logo-client">
+          <img src="img/borodinski.png" width="209" height="90" alt="borodinski">
+        </div>
+      </section>
+    </div>
+    <section class="map">
+      <img src="img/map.jpg" width="1200" height="416" alt="map">
+      <div class="contant-us">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <span>+7 (812) 275-75-75</span></p>
+        <a class="btn-contact-us" href="#">Напишите нам</a>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footercontainer container">
+        <div class="social-network">
+          <a class="social-network-vk" href="#">Вконтакте</a>
+          <a class="social-network-fb" href="#">Фейсбук</a>
+          <a class="social-network-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="social-network-text">
+          <p><span>Давайте дружить, это выгодно!</span></p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
-    </footer>
-  </body>
-  </html>
+    </div>
+  </footer>
+</body>
+</html>

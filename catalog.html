@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Нёрдс</title>
 </head>
 <body>
   <header class="main-header">
-    <div class="container clearfix">
+    <div class="container">
       <div class="main-logo">
         <a href="index.html">
           <img src="img/main-logo.png" width="139" height="56" alt="Студия веб дизайна Нердс">
@@ -16,15 +17,15 @@
       </div>
       <div class="container-navigation">
         <nav class="main-navigation">
-          <ul class="clearfix">
+          <ul>
             <li class="navigation-point">
               <a href="#">Студия</a>
             </li>
             <li class="navigation-point">
               <a href="#">Клиенты</a>
             </li>
-            <li class="navigation-point">
-              <a>Магазин</a>
+            <li class="choose">
+              <div>Магазин</div>
             </li>
             <li class="navigation-point">
               <a href="#">Контакты</a>
@@ -32,10 +33,10 @@
           </ul>
         </nav>
       </div>
-      <div class="basket clearfix">
+      <div class="basket">
         <a href="#">
-          <p class="navigation-point"><span>Корзина</span><p>
-            <img class="navigation-point" src="img/basket-icon.png" width="15" height="15" alt="Корзина">
+          <img class="basket-icon" src="img/basket-icon.png" width="" height="" alt="">
+          <p>Корзина</p>
           </a>
         </div>
       </div>
@@ -44,7 +45,7 @@
       <section class="main-block1">
         <h1 class="container">Добро пожаловать в магазин готовых макетов</h1>
       </section>
-      <div class="container clearfix">
+      <div class="shop container clearfix">
         <div class="choise">
           <form action="" method="post">
             <p><span>Стоимость</span></p>
@@ -61,19 +62,19 @@
             </div>
             <p><span>Сетка</span></p>
             <ul>
-              <li>
+              <li class="form-item">
                 <label>
                   <input type="radio" name="mesh" value="adptive">
                   Адаптивная
                 </label>
               </li>
-              <li>
+              <li class="form-item">
                 <label>
                   <input type="radio" name="mesh" value="fix" checked>
                   Фиксированная
                 </label>
               </li>
-              <li>
+              <li class="form-item">
                 <label>
                   <input type="radio" name="mesh" value="rubber">
                   Резиновая
@@ -82,31 +83,31 @@
             </ul>
             <p><span>Особенности</span></p>
             <ul>
-              <li>
+              <liclass="form-item">
                 <label>
                   <input type="checkbox" name="features" id="slider" checked>
                   Слайдер
                 </label>
               </li>
-              <li>
+              <li class="form-item">
                 <label>
                   <input type="checkbox" name="features" id="preferences-block">
                   Блок преимуществ
                 </label>
               </li>
-              <li>
+              <li class="form-item">
                 <label>
                   <input type="checkbox" name="features" id="news" checked>
                   Новости
                 </label>
               </li>
-              <li>
+              <li class="form-item">
                 <label>
                   <input type="checkbox" name="features" id="gallery">
                   Галерея
                 </label>
               </li>
-              <li>
+              <li class="form-item">
                 <label>
                   <input type="checkbox" name="features" id="basket">
                   Корзина
