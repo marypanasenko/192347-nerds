@@ -74,28 +74,36 @@ body {
 }
 .basket {
   float: right;
-  min-width: 66px;
+  max-width: 100px;
 }
-.basket img {
-  display: none;
+
+.basket a:hover{
+  ;
 }
-.basket a {
-  text-decoration: none;
-}
-.basket p:hover{
-  color: #fb565a;
-}
-.basket p{
+.basket a{
+  position: relative;
+  display: inline-block;
   font-size: 14px;
   line-height: 30px;
+  padding-left: 30px;
   margin-top: 52px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   color: #000000;
   text-transform: uppercase;
   list-style: none;
+  text-decoration: none;
 }
-.main-block {
+.basket a::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  background-image: url('img/sprite.png');
+  width: 15px;
+  height: 15px;
+  background-position: -5px -5px;
 }
+
 .main-block1 {
   min-height: 225px;
   background: #eeeeee;
@@ -127,11 +135,13 @@ body {
 .slider1, .slider2 {
   display: none;
 }
-.slider-heading, .about-us-heading {
+.slider-heading, .about-us-heading, .footer-heading{
   font-size: 36px;
   line-height: 36px;
 }
-.slider-text, .about-us-text{
+.slider-text, .about-us-text, .footer-text{
+  font-size: 16px;
+  line-height: 22px;
   color: #333333;
   margin-bottom: 30px;
 }
@@ -356,7 +366,7 @@ body {
 }
 
 .map {
-  max-height: 416px;
+  height: 100%;
   position: relative;
 }
 .map img{
@@ -413,7 +423,7 @@ body {
 .btn-contact-us:hover{
   background: #cc3366;
 }
-..btn-contact-us:active{
+.btn-contact-us:active{
   background: #b63538;
 }
 
@@ -423,29 +433,49 @@ body {
 }
 .footercontainer {
   font-size: 0;
+  padding-top: 77px;
 }
 
 .social-network {
-  width: 240px;
-  min-height: 65px;
+  width: 320px;
   display: inline-block;
   font-size: 0;
-  vertical-align: middle;
+  vertical-align: top;
   text-align: left;
+}
+.social-network-text {
+  width: 560px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+.footer-heading {
+  display: block;
+  margin: 0;
+}
+.footer-text {
+  display: block;
+  margin-top: 10px;
 }
 
-.social-network-text {
-  width: 550px;
-  height: 65px;
+.social-btn {
+  width: 62px;
+	height: 62px;
+	background: #cccccc;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
   display: inline-block;
-  font-size: 16px;
-  vertical-align: middle;
+  font-size: 0;
+  vertical-align: top;
   text-align: left;
+  font-size: 0;
+  margin-right: 26px;
 }
-.social-network-vk, .social-network-fb, .social-network-inst {
+
+.social-btn-vk, .social-btn-fb, .social-btn-inst {
   display: inline-block;
   width: 62px;
-  font-size: 16px;
   vertical-align: middle;
   text-align: left;
 }
@@ -508,7 +538,72 @@ body {
 .pages {
   margin-bottom: 78px;
 }
-/* {
+.sprite {
+    background-image: url('img/sprite.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+.sprite-icon-basket {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -30px -5px;
+}
+
+.sprite-icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -63px -5px;
+}
+
+.sprite-icon-circle {
+    width: 25px;
+    height: 25px;
+    background-position: -100px -5px;
+}
+
+.sprite-icon-circle-dot {
+    width: 25px;
+    height: 25px;
+    background-position: -135px -5px;
+}
+
+.sprite-icon-down-dir {
+    width: 11px;
+    height: 10px;
+    background-position: -170px -5px;
+}
+
+.sprite-icon-facebook {
+    width: 12px;
+    height: 22px;
+    background-position: -191px -5px;
+}
+
+.sprite-icon-instagramm {
+    width: 21px;
+    height: 21px;
+    background-position: -213px -5px;
+}
+
+.sprite-icon-up-dir {
+    width: 11px;
+    height: 10px;
+    background-position: -244px -5px;
+}
+
+.sprite-icon-vk {
+    width: 26px;
+    height: 15px;
+    background-position: -265px -5px;
+}
+
+
+* {
   outline: 1px dashed red;
 }
-*/
