@@ -34,87 +34,69 @@
         </nav>
       </div>
       <div class="basket">
-        <a href="#">
-          <img class="basket-icon" src="img/basket-icon.png" width="" height="" alt="">
-          <p>Корзина</p>
-          </a>
-        </div>
+        <a href="#">Корзина</a>
       </div>
-    </header>
-    <main class="main-block">
-      <section class="main-block1">
-        <h1 class="container">Добро пожаловать в магазин готовых макетов</h1>
-      </section>
-      <div class="shop container clearfix">
-        <div class="choise">
-          <form action="" method="post">
-            <p><span>Стоимость</span></p>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale"><div style="" class="bar"></div></div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+    </div>
+  </header>
+  <main class="main-block">
+    <section class="main-block1">
+      <h1 class="shop-heading container">Добро пожаловать в магазин готовых макетов</h1>
+    </section>
+    <div class="shop container clearfix">
+      <div class="choise">
+        <form class="form-choise" action="form.php" method="get">
+          <p><span class="form-heading">Стоимость</span></p>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div style="margin-left: 20%; width:30%" class="bar"></div></div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
-                от <input class="min-price" type="text" value="0">
-                до <input class="max-price" type="text" value="15 000">
+                <label class="min-price"> от <input class="min-price" type="text" value="0"></label>
+                <label class="max-price"> до <input class="max-price" type="text" value="15 000"></label>
               </div>
             </div>
-            <p><span>Сетка</span></p>
-            <ul>
+            <p><span class="form-heading">Сетка</span></p>
+            <ul class="choise-list">
               <li class="form-item">
-                <label>
-                  <input type="radio" name="mesh" value="adptive">
-                  Адаптивная
-                </label>
+                <input type="radio" name="mesh" id="adaptive1" value="adaptive">
+                <label for="adaptive1">Адаптивная</label>
               </li>
               <li class="form-item">
-                <label>
-                  <input type="radio" name="mesh" value="fix" checked>
-                  Фиксированная
-                </label>
+                <input type="radio" name="mesh" id="fix1" value="fix" checked>
+                <label for="fix1">Фиксированная</label>
               </li>
               <li class="form-item">
-                <label>
-                  <input type="radio" name="mesh" value="rubber">
-                  Резиновая
-                </label>
+                <input type="radio" name="mesh" id="rubber1" value="rubber">
+                <label for="rubber1">Резиновая</label>
               </li>
             </ul>
-            <p><span>Особенности</span></p>
-            <ul>
-              <liclass="form-item">
-                <label>
-                  <input type="checkbox" name="features" id="slider" checked>
-                  Слайдер
-                </label>
+            <p><span class="form-heading">Особенности</span></p>
+            <ul class="choise-list">
+              <li class="form-item">
+                <input type="checkbox" name="features" id="slider" checked>
+                <label for="slider">Слайдер</label>
               </li>
               <li class="form-item">
-                <label>
-                  <input type="checkbox" name="features" id="preferences-block">
-                  Блок преимуществ
-                </label>
+                <input type="checkbox" name="features" id="preferences-block">
+                <label for="preferences-block">Блок преимуществ</label>
               </li>
               <li class="form-item">
-                <label>
-                  <input type="checkbox" name="features" id="news" checked>
-                  Новости
-                </label>
+                <input type="checkbox" name="features" id="news" checked>
+                <label for="news">Новости</label>
               </li>
               <li class="form-item">
-                <label>
-                  <input type="checkbox" name="features" id="gallery">
-                  Галерея
-                </label>
+                <input type="checkbox" name="features" id="gallery">
+                <label for="gallery">Галерея</label>
               </li>
               <li class="form-item">
-                <label>
-                  <input type="checkbox" name="features" id="basket">
-                  Корзина
-                </label>
+                <input type="checkbox" name="features" id="basket">
+                <label for="basket">Корзина</label>
               </li>
             </ul>
-            <input type="submit" value="Показать">
+               <input type="submit" value="Показать">
           </form>
         </div>
         <section class="sites">
@@ -131,67 +113,81 @@
                 <a class="by-function" href="#">По функционалу</a>
               </li>
             </ul>
-            <div class="triangle-up"></div>
-            <div class="triangle-down"></div>
+            <div class="triangles">
+              <div class="triangle-down"></div>
+              <div class="triangle-up"></div>
+            </div>
           </div>
           <div class="img">
             <div class="sites-img">
-              <a href="#">
+              <a class="site-window" href="#">
                 <img src="img/aviator.jpg" width="240" height="240" alt="aviator">
                 <div class="modal">
-                  <h2 class="site-name">aviator</h2>
-                  <p class="site-description">Одностраничный макет с авторским дизайном</p>
-                  <p class="price">8000 Р.</p>
+                  <div class="modal-center">
+                    <h2 class="site-name">aviator</h2>
+                    <p class="site-description">Одностраничный макет с авторским дизайном</p>
+                    <p class="price">8000 Р.</p>
+                  </div>
                 </div>
               </a>
             </div>
             <div class="sites-img">
-              <a href="#">
+              <a class="site-window" href="#">
                 <img src="img/sunset.jpg" width="240" height="240" alt="sunset">
                 <div class="modal">
-                  <h2 class="site-name">sunset</h2>
-                  <p class="site-description">Интернет-магазин с личным кабинетом</p>
-                  <p class="price">10000 Р.</p>
+                  <div class="modal-center">
+                    <h2 class="site-name">sunset</h2>
+                    <p class="site-description">Интернет-магазин с личным кабинетом</p>
+                    <p class="price">10000 Р.</p>
+                  </div>
                 </div>
               </a>
             </div>
             <div class="sites-img">
-              <a href="">
+              <a class="site-window" href="">
                 <img src="img/forte.jpg" width="240" height="240" alt="forte">
                 <div class="modal">
-                  <h2 class="site-name">forte</h2>
-                  <p class="site-description">Отличный макет для личного блога</p>
-                  <p class="price">5000 Р.</p>
+                  <div class="modal-center">
+                    <h2 class="site-name">forte</h2>
+                    <p class="site-description">Отличный макет для личного блога</p>
+                    <p class="price">5000 Р.</p>
+                  </div>
                 </div>
               </a>
             </div>
             <div class="sites-img">
-              <a href="#">
+              <a class="site-window" href="#">
                 <img src="img/thai.jpg" width="240" height="240" alt="thai">
                 <div class="modal">
-                  <h2 class="site-name">modern organic thai</h2>
-                  <p class="site-description">Сайт для ресторана быстрого питания</p>
-                  <p class="price">12000 Р.</p>
+                  <div class="modal-center">
+                    <h2 class="site-name">modern organic thai</h2>
+                    <p class="site-description">Сайт для ресторана быстрого питания</p>
+                    <p class="price">12000 Р.</p>
+                  </div>
                 </div>
               </a>
             </div>
             <div class="sites-img">
-              <a href="#">
-                <img src="img/avenue.jpg" width="240" height="240" alt="avenue">
-                <div class="modal">
-                  <h2 class="site-name">avenue</h2>
-                  <p class="site-description">Макет для блога о путешествиях</p>
-                  <p class="price">8000 Р.</p>
+              <a class="site-window" href="#">
+                  <img src="img/avenue.jpg" width="240" height="240" alt="avenue">
+                  <div class="modal">
+                    <div class="modal-center">
+                    <h2 class="site-name">avenue</h2>
+                    <p class="site-description">Макет для блога о путешествиях</p>
+                    <p class="price">8000 Р.</p>
+                  </div>
                 </div>
               </a>
             </div>
             <div class="sites-img">
-              <a href="#">
+              <a class="site-window" href="#">
                 <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail">
                 <div class="modal">
-                  <h2 class="site-name">dovetail</h2>
-                  <p class="site-description">Интернет-магазин с галереей товаров</p>
-                  <p class="price">14000 Р.</p>
+                  <div class="modal-center">
+                    <h2 class="site-name">dovetail</h2>
+                    <p class="site-description">Интернет-магазин с галереей товаров</p>
+                    <p class="price">14000 Р.</p>
+                  </div>
                 </div>
               </a>
             </div>
@@ -214,17 +210,17 @@
       </section>
     </main>
     <footer class="main-footer">
-        <div class="footercontainer container">
-          <div class="social-network">
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          </div>
-          <div class="social-network-text">
-            <p class="footer-heading">Давайте дружить, это выгодно!</p>
-            <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
-          </div>
+      <div class="footercontainer container">
+        <div class="social-network">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
+        <div class="social-network-text">
+          <p class="footer-heading">Давайте дружить, это выгодно!</p>
+          <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
     </footer>
   </body>
   </html>
