@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Нёрдс</title>
@@ -40,37 +39,47 @@
   </header>
   <main class="main-block">
     <div class="main-block1">
-      <div class="container">
-        <section class="slider1 clearfix">
-          <div class="promo">
-            <p><span class="slider-heading">Долго, дорого, скурпулезно.</span></p>
-            <p class="slider-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-            <a class="btn-more" href="#">Узнать больше</a>
-          </div>
-          <div class="img-slider1">
-            <img src="img/gadgets.png" width="338" height="231" alt="Гаджеты">
-          </div>
-        </section>
-        <section class="slider2 clearfix">
-          <div class="promo">
-            <p><span class="slider-heading">Любите ли вы математику, как любим ее мы?</span></p>
-            <p class="slider-text">Нашим дизайнерам мы удаляем нейроны, ответственные <br> за креатив, чтобы дать им возможность все просчитать</p>
-            <a class="btn-more" href="#">Узнать больше</a>
-          </div>
-          <div class="img-slider2">
-            <img src="img/calculator.png" width="230" height="249" alt="Калькулятор">
-          </div>
-        </section>
-        <section class="slider3 clearfix">
-          <div class="promo">
-            <p><span class="slider-heading">Только наркотики,<br> только хардкор!</span></p>
-            <p class="slider-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-            <a class="btn-more" href="#">Узнать больше</a>
-          </div>
-          <div class="img-slider3">
-            <img src="img/mr-robot.png" width="333" height="319" alt="Мистер-Робот">
-          </div>
-        </section>
+      <div class="slider container">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <section class="slide slider1 clearfix">
+            <div class="promo">
+              <p><span class="slider-heading">Долго, дорого, скрупулезно.</span></p>
+              <p class="slider-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="btn-more" href="#">Узнать больше</a>
+            </div>
+            <div class="img-slider1">
+              <img src="img/gadgets.png" width="338" height="231" alt="Гаджеты">
+            </div>
+          </section>
+          <section class="slide slider2 clearfix">
+            <div class="promo">
+              <p><span class="slider-heading">Любите ли вы математику, как любим ее мы?</span></p>
+              <p class="slider-text">Нашим дизайнерам мы удаляем нейроны, ответственные <br> за креатив, чтобы дать им возможность все просчитать</p>
+              <a class="btn-more" href="#">Узнать больше</a>
+            </div>
+            <div class="img-slider2">
+              <img src="img/calculator.png" width="230" height="249" alt="Калькулятор">
+            </div>
+          </section>
+          <section class="slide slider3 clearfix">
+            <div class="promo">
+              <p><span class="slider-heading">Только наркотики,<br> только хардкор!</span></p>
+              <p class="slider-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+              <a class="btn-more" href="#">Узнать больше</a>
+            </div>
+            <div class="img-slider3">
+              <img src="img/mr-robot.png" width="333" height="319" alt="Мистер-Робот">
+            </div>
+          </section>
+        </div>
       </div>
     </div>
     <div class="container">
@@ -88,7 +97,7 @@
             <img src="img/apps.png" width="240" height="124" alt="application">
           </div>
           <p class="service-heading">приложения</p>
-          <p class="service-text">Покорите топ-10 приложений в AppStrore и Google Play</p>
+          <p class="service-text">Покорите топ-10 приложений в&nbsp;AppStrore и Google Play</p>
           <a class="btn-buy green" href="">Заказать</a>
         </div>
         <div class="service-content">
@@ -146,25 +155,70 @@
     </div>
     <section class="map">
       <img src="img/map.jpg" width="1200" height="416" alt="map">
-      <div class="contant-us">
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <span>+7 (812) 275-75-75</span></p>
-        <a class="btn-contact-us" href="#">Напишите нам</a>
+      <div class="container">
+        <div class="contant-us">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <span>тел. +7 (812) 275-75-75</span></p>
+          <a class="btn-contact-us" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-      <div class="footercontainer container">
-        <div class="social-network">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </div>
-        <div class="social-network-text">
-          <p class="footer-heading">Давайте дружить, это выгодно!</p>
-          <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+    <div class="footercontainer container">
+      <div class="social-network">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
       </div>
+      <div class="social-network-text">
+        <p class="footer-heading">Давайте дружить, это выгодно!</p>
+        <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
   </footer>
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class=form-name>
+        <p>Ваше имя:</p>
+        <input class="icon-user" type="text" name="name" placeholder="Представтесь, пожалуйста" required>
+      </div>
+      <div class="form-email">
+        <p>Ваш e-mail:</p>
+        <input class="icon-email" type="text"  name="email" placeholder="Для отправки ответа" required>
+      </div>
+      <p class="text-letter">Текст письма:</p>
+      <textarea name="comment" id="comment-field" cols="10" rows="10">В свободной форме</textarea>
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
+  <script>
+      var link = document.querySelector(".btn-contact-us");
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+      var login = popup.querySelector("[name=name]");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+        name.focus();
+
+      });
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+
+          }
+        }
+      });
+
+  </script>
 </body>
 </html>
